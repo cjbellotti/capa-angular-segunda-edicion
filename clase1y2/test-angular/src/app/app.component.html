@@ -1,0 +1,19 @@
+<h1>
+  {{title}}
+</h1>
+<button (click)="nuevo()" *ngIf="!nuevoFlag">Nuevo</button>
+<formulario [(texto)]="texto" 
+			(agregar)="agregar($event)"
+			(cancelar)="cancelar()" 
+			[hidden]="!nuevoFlag"
+			></formulario>
+<ul>
+	<li *ngFor="let item of lista;let i = index;"><item [texto]="item" (modificar)="modificar(i)" [disableButton]="nuevoFlag"></item></li>
+</ul>
+<button (click)="mostrar()">Mostrar</button>
+<div class="box" [class.boxRed]="isNuevoColor()">
+	{{numero | number : '1.2'}}
+	{{ fecha | date : '>>>>yyyy-MM-dd \n- hh:mm:ss<<<<'}}<br/>
+	{{ mensaje | mypipe }}<br/>
+	USD{{ numero | number : '1.2'}}
+</div>
