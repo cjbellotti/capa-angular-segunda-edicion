@@ -1,15 +1,18 @@
 <div class="container">
-	<div class="form-group">
-		<label for="id">Id</label>
-		<input class="form-control" id="id" name="id" [(ngModel)]="cliente.id" type="number">
-	</div>
-	<div class="form-group">
-		<label for="nombre">Nombre</label>
-		<input class="form-control" id="nombre" name="nombre" [(ngModel)]="cliente.nombre">
-	</div>
-	<div class="form-group">
-		<label for="apellido">Apellido</label>
-		<input class="form-control" id="apellido" name="apellido" [(ngModel)]="cliente.apellido">
-	</div>
-	<button class="btn btn-success w-100" (click)="aceptar()">Aceptar</button>
+	<form #f="ngForm" (ngSubmit)="aceptar(f.value)">
+		<div class="form-group">
+			<label for="id">Id</label>
+			<input class="form-control" id="id" name="id"  type="number" ngModel required>
+		</div>
+		<div class="form-group">
+			<label for="nombre">Nombre</label>
+			<input class="form-control" id="nombre" name="nombre" ngModel required>
+		</div>
+		<div class="form-group">
+			<label for="apellido">Apellido</label>
+			<input class="form-control" id="apellido" name="apellido" ngModel >
+		</div>
+		<button class="btn btn-success w-100" [disabled]="!f.valid">Aceptar</button>	
+	</form>
+
 </div>

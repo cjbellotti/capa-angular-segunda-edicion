@@ -1,0 +1,13 @@
+:host span{
+	display: inline-block;
+	width : 20px;
+	height : 20px;
+	background-color: red;
+	color : white;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size : 16px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+};

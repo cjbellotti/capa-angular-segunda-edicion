@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Cliente } from '../../models/cliente';
 
 @Component({
 	selector : 'cliente-form',
@@ -8,11 +7,10 @@ import { Cliente } from '../../models/cliente';
 
 export class ClienteFormComponent {
 
-	@Input('cliente') cliente : Cliente = new Cliente();
-	@Output ('aceptar') aceptarEvent : EventEmitter<Cliente> = new EventEmitter<Cliente>();
+	@Output ('aceptar') aceptarEvent : EventEmitter<any> = new EventEmitter<any>();
 
-	aceptar() {
-		this.aceptarEvent.emit(this.cliente);
+	aceptar(datos : any) {
+		this.aceptarEvent.emit(datos);
 	}
 
 }
