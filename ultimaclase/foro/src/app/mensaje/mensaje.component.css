@@ -1,0 +1,25 @@
+.mensaje {
+	height : 400px;
+}
+
+.avatar {
+	width : 80px;
+	height : 100px;
+	border : 1px solid black;
+	margin : 2px;
+}
+
+.contenido {
+	overflow-y: auto;
+}
+
+.contenido::-webkit-scrollbar {
+	width : 6px;
+	background-color: white;
+	border-radius: 3px;
+}
+
+.contenido::-webkit-scrollbar-thumb {
+	background-color: gray;
+	border-radius: 3px;
+}

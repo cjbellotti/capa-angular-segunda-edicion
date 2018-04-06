@@ -1,0 +1,27 @@
+<div class="card mensaje my-2">
+	<div class="row h-100">
+		<div class="col-1 text-center">
+			<div class="avatar">
+				<avatar
+					[imagen]="mensaje.usuario.avatar"
+					[nombre]="mensaje.usuario.nombre + ' ' + mensaje.usuario.apellido"
+				></avatar>
+			</div>
+		</div>
+		<div class="col-11 h-100">
+			<div class="card h-100">
+				<div class="card-header">
+					{{mensaje.fecha | date : 'dd/MM/yyyy hh:mm:ss'}}
+				</div>
+				<div class="card-body h-100">
+					<div class="card mb-2 h-75 contenido">
+						<!--p>{{mensaje.contenido}}</p-->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus incidunt, tenetur enim excepturi laborum! Accusantium nemo delectus temporibus, suscipit aperiam impedit repellendus similique cupiditate odit magnam praesentium recusandae, ut! Molestiae, sit eos illum, repellendus consectetur error a quis atque tempora cum libero hic? Id, ab sunt cupiditate nam doloremque, voluptatum earum aliquid quasi et commodi expedita possimus, modi totam architecto. Impedit quis cum accusantium et molestias architecto reprehenderit saepe quae enim excepturi, illum iste tempora, unde quasi. Facere similique repellat unde deleniti tempore molestias temporibus, suscipit optio perspiciatis nam rerum repudiandae labore distinctio, in id pariatur doloremque aliquid ab totam magni. Molestias blanditiis, magnam explicabo libero aperiam, sunt itaque consectetur laudantium similique magni. Quo saepe nesciunt optio ipsum iure, assumenda autem earum cum expedita cumque ad reprehenderit sit, numquam deserunt quam ex unde, quis fugit corrupti iste, ea esse dignissimos temporibus minima! Ipsum illum, quas vero explicabo, labore ipsa at officia molestias laboriosam minima eaque, quod tenetur. Vitae explicabo rerum doloremque, nemo, eveniet saepe perspiciatis voluptate voluptatem architecto, molestiae beatae consectetur odio veniam, laborum veritatis maiores vel. Quis ex quaerat inventore cum nulla officiis. Odit dicta, praesentium fugit, facilis deserunt placeat voluptates dolorum officiis! Illo veniam voluptas perferendis nemo quos temporibus facilis soluta facere placeat. Similique saepe repudiandae, quos sed quidem id corporis, rem reprehenderit ea voluptate blanditiis sequi ad, harum porro nisi dignissimos enim! Omnis perspiciatis, facere eveniet repellat voluptas sed fugit assumenda exercitationem officia at minima, velit dolores nobis quibusdam! Tempore harum reprehenderit provident expedita tenetur. Voluptate quisquam odio eligendi. Labore, fugit ipsam, excepturi quidem temporibus, eos rem mollitia error quae unde sapiente nemo corporis. Quam nisi, ullam quibusdam! Nulla deserunt facilis qui fugiat natus amet, quos voluptatem corporis quibusdam ullam nisi ducimus magnam? Perferendis nihil debitis praesentium neque, aperiam a saepe sequi fuga voluptas! Optio ullam animi tempore ipsa rerum sunt est vero, facilis ducimus repudiandae minus consectetur, distinctio excepturi, fuga. Corporis, similique velit amet vel nesciunt architecto tempora iure ad rerum rem adipisci voluptatibus, eveniet totam, dolorum aspernatur explicabo officia nulla quia qui deleniti, quasi nisi consequuntur eum. Non commodi, a aspernatur nostrum consequatur ipsum omnis fuga ut veniam, autem ratione porro cumque ex voluptate nemo, repellendus qui itaque dolor expedita in sapiente aliquid labore iste, error enim. Optio fugiat, accusamus odit. Eum asperiores quo enim laudantium, ducimus, soluta dicta atque sapiente quam optio voluptatem nihil dolore mollitia placeat, minima, reprehenderit temporibus ea! Error cupiditate aliquid, hic minima recusandae vero enim quos distinctio, accusamus necessitatibus? Aliquam dolore consequatur perspiciatis repellat neque reprehenderit, obcaecati, veritatis, laboriosam facilis vel cupiditate totam culpa deserunt pariatur vero quae sapiente quos nemo dolor repudiandae voluptatem cum. Quaerat est maxime excepturi architecto soluta cum! Pariatur perferendis quis dignissimos recusandae delectus, magni laborum amet itaque enim nulla in accusamus, quibusdam, nesciunt nemo. Quisquam repellat quod, totam recusandae, ex molestias dignissimos libero, explicabo magni eligendi fuga suscipit sapiente magnam voluptatibus accusantium et sint deleniti. Ut quas pariatur odio laboriosam molestias vitae doloribus cupiditate, a libero commodi illum cum harum, cumque quam qui dolorem accusantium. Explicabo a, deleniti, non necessitatibus fugit eveniet fuga aspernatur libero facilis, quisquam sed itaque ut earum. Voluptatum repudiandae blanditiis accusamus nobis magnam eum at. At, quaerat! Nam culpa, similique numquam perspiciatis pariatur rem laborum et, iste error, labore eos quaerat, aperiam aspernatur fugit repudiandae! Facilis hic alias consectetur itaque maxime doloremque, delectus recusandae laboriosam repudiandae doloribus deleniti sequi eos officiis pariatur facere dolorum nihil voluptas labore, corrupti placeat accusantium architecto inventore numquam excepturi! Deserunt qui quia iste, nemo laboriosam sapiente labore aut eius non mollitia provident neque dolore dolores facere libero dolorum illum accusantium explicabo amet alias consequuntur error. Eaque.</p>
+					</div>
+					<button class="btn btn-success btn-sm"
+							(click)="doResponder()">Responder</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

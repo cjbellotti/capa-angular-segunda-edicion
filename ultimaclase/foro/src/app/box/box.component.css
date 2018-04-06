@@ -1,0 +1,19 @@
+:host div:nth-child(1) {
+	position : relative;
+	background-color: #ddffcc;
+	padding: 3px;
+	border-radius: 6px;
+	border: 3px solid #ffdddd;
+	font-family: "Arial";
+	font-size : 24px;
+	cursor: pointer;
+}
+:host div:nth-child(2) {
+	overflow : hidden;
+	width : 100%;
+	transition: all 0.5s;
+}
+
+.collapsed {
+	height : 0px;
+}

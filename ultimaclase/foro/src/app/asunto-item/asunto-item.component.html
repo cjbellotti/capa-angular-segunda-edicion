@@ -1,0 +1,19 @@
+<div class="card my-2" (click)="doClick()">
+	<div class="card-header bg-info text-light">
+		{{titulo}}
+	</div>
+	<div class="card-body">
+		<div class="row">
+			<div class="col-3 text-right font-weight-bold">Autor</div>
+			<div class="col-9 text-left">{{autor}}</div>
+		</div>
+		<div class="row">
+			<div class="col-3 text-right font-weight-bold">Mensajes</div>
+			<div class="col-9 text-left">{{cantidadMensajes}}</div>
+		</div>
+		<div class="row">
+			<div class="col-3 text-right font-weight-bold">Fecha Ultimo Mensaje</div>
+			<div class="col-9 text-left">{{fecha | date:'dd/MM/yyyy hh:mm'}}</div>
+		</div>
+	</div>
+</div>
